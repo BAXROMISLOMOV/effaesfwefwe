@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+
+button{
+    cursor: pointer;
+    transition: .5s;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header{
+    background: #5855E7;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+header .container-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+}
+
+header .container-header .header-table{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+header .container-header .header-table .header-list .dropdown{
+    position: relative;
+}
+
+header .container-header .header-table .header-list .dropdown .dropdown-content{
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.5s ,opacity 0s  ;
+    /* display: none; */
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 24px;
+    padding: 16px;
+    position: absolute;
+    line-height: 50px;
+    border-radius: 5px;
+}
+
+header .container-header .header-table .header-list .dropdown:hover .dropdown-content{
+    visibility: visible;
+    opacity: 1;
+    height: 200px; /* Adjust according to your content */
+}
+
+
+header .container-header .header-table .header-list .dropdown .dropdown-content a:hover{
+    color: #d06363;
+}
+
+header .container-header .header-table .header-list .header-link{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.11px;
+    color: #FFFFFF;
+}
+
+header .container-header .header-table .header-list .header-link:hover{
+    color: #d06363;
+}
+
+header .container-header .header-btn{
+    padding: 11px 35px;
+    font-size: 24px;
+    line-height: 28.13px;
+    border-radius: 5px;
+    border: 1.5px solid #eee;
+    color: #eee;
+    background: transparent;
+}
+
+header .container-header .header-btn:hover{
+    background: #d06363;
+    color: #FFFFFF;
+    border: 1.5px solid transparent;
+}
+
+nav{
+    background: #f9f9f9;
+}
+
+nav .container-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+nav .container-navbar .navbar-discription{
+    margin-right: -250px;
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+nav .container-navbar .navbar-discription .nav-discription-name{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49.52px;
+    text-align: left;
+    width: 568px;
+}
+
+nav .container-navbar .navbar-discription span{
+    color: #5855E7;
+}
+
+nav .container-navbar .navbar-discription .nav-discription-text{
+    width: 534px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.navbar-img{
+    position: relative;
+    margin-left: 130px;
+    z-index: 10;
+}
+
+nav .container-navbar .navbar-discription-img .navbar-img-pos{
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    z-index: 1;
+}
+
+.nav-discription-button{
+    padding: 5px 32px;
+    color: #515151;
+    border: 2px solid #6347EB;
+    font-size: 36px;
+    line-height: 42.19px;
+    text-align: left;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.nav-discription-button:hover{
+    background: #6347EB;
+    color: #FFFFFF;
+}
+.sectiontwo {
+  width: 100%;
+  margin-left: 150px;
+  padding-bottom: 214px;
+  padding-top: 218px;
+
+  background-color: white;
+  display: flex;
+  gap: 44px;
+}
+.sectiontwo img {
+  width: 400px;
+  height: 300px;
+  margin-right: 50px;
+  box-shadow: #5855e7;
+}
+.twotetle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  margin-right: 300px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: 0.9;
+}
+.sectionthree {
+  padding-top: 78px;
+  padding-bottom: 75px;
+  background-color: #5855e7;
+  text-align: center;
+  color: white;
+}
+.sectionthree h2 {
+  padding-bottom: 92px;
+  font-size: 40px;
+}
+.nashi {
+  display: flex;
+}
+.nashi2 {
+  display: flex;
+}
+.sectionfor {
+  position: relative;
+  z-index: 1;
+  /* padding-top: 300px; */
+}
+.classposition {
+  color: gray;
+  opacity: 0.1;
+  position: absolute;
+  top: 140px;
+  left: 34%;
+
+  font-size: 70px;
+
+  z-index: -1;
+}
+.classone {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+.h2 {
+  text-align: center;
+  padding-bottom: 80px;
+  padding-top: 214px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.onee {
+  padding: 30px;
+  color: white;
+  width: 301px;
+  height: 650px;
+  border-radius: 10px;
+  background-color: #5855e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.onee p {
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.onee h2 {
+  text-transform: lowercase;
+}
+.onee h4 {
+  text-transform: lowercase;
+}
+.onee img {
+  padding: 30px;
+  border-radius: 35px;
+}
+.onee button {
+  color: #5855e7;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 24px;
+  font-size: 18px;
+  border: none;
+}
+.classtwo {
+  padding-top: 59px;
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+.sectionfive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 7;
+}
+.classpositiontwo {
+  color: gray;
+  opacity: 0.1;
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  font-size: 70px;
+  z-index: -1;
+}
+.sectionsix {
+  border-radius: 10px;
+  color: white;
+  padding: 51px;
+  margin-left: 120px;
+  display: flex;
+  gap: 114px;
+  width: 80%;
+  background-color: #5855e7;
+}
+.sectionsix p {
+  color: lightgray;
+}
+.nomera {
+  display: flex;
+  gap: 10px;
+}
+.builld {
+  width: 400px;
+  height: 300px;
+}
+.kontakti {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.zayavka {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.zayavka input {
+  width: 350px;
+  height: 55px;
+  border-radius: 8px;
+  border: none;
+  padding: 20px;
+}
+.zayavka textarea {
+  border-radius: 8px;
+  border: none;
+  padding: 20px;
+}
+.zayavka button {
+  border-radius: 10px;
+  border: none;
+  margin-left: 160px;
+  width: 197px;
+  height: 52px;
+  font-size: 20px;
+}
+footer {
+  margin-top: 97px;
+  background-color: #5855e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footertext {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer p {
+  color: lightgray;
+}
+.logos {
+  padding-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+.logos img {
+  width: 32px;
+  height: 32px;
+}
+button:hover {
+  background-color: blue;
+  color: bisque;
+}
